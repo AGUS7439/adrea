@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>?? Zona Gamer</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #121212;
+      color: #fff;
+    }
+
+    header {
+      background: linear-gradient(to right, #4CAF50, #2E7D32);
+      padding: 20px;
+      text-align: center;
+      font-size: 2rem;
+      font-weight: bold;
+      color: white;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.6);
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .featured-game {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    canvas {
+      background-color: #222;
+      border: 3px solid #4CAF50;
+      margin: 20px auto;
+      display: block;
+    }
+
+    h2 {
+      margin-top: 20px;
+      font-size: 1.5rem;
+      color: #4CAF50;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background-color: #1e1e1e;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 15px;
+      text-align: center;
+    }
+
+    .card-content h3 {
+      margin: 10px 0;
+      font-size: 1.2rem;
+    }
+
+    .card-content a {
+      text-decoration: none;
+      color: white;
+      background-color: #4CAF50;
+      padding: 10px 20px;
+      border-radius: 5px;
+      display: inline-block;
+      margin-top: 10px;
+      transition: background 0.3s;
+    }
+
+    .card-content a:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+  <header>?? Mi Zona Gamer</header>
+
+  <div class="container">
+
+    <section class="featured-game">
+      <h2>?? Juego de la Víbora - Come Manzanas ??</h2>
+      <canvas id="game" width="400" height="400"></canvas>
+      <p>Usa las teclas de flechas para mover la víbora</p>
+    </section>
+
+    <h2>?? Más Juegos</h2>
+    <div class="gallery">
+      <!-- Puedes duplicar esta tarjeta para añadir más juegos -->
+      <div class="card">
+        <img src="C:\Users\equipo 9\Pictures\MI PRIMERA PAGINA WEB\maxresdefault.jpg" alt="Juego 1">
+        <div class="card-content">
+          <h3>Juego Clásico</h3>
+          <a href="https://www.friv.com/z/games/airdogsofww2/game.html" target="_blank">Jugar</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="C:\Users\equipo 9\Pictures\MI PRIMERA PAGINA WEB\images.jpg" alt="Juego 2">
+        <div class="card-content">
+          <h3>Penalty Challenge</h3>
+          <a href="https://www.friv.com/z/games/penaltychallenge/game.html" target="_blank">Jugar</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="C:\Users\equipo 9\Pictures\MI PRIMERA PAGINA WEB\images (1).jpg" alt="Juego 3">
+        <div class="card-content">
+          <h3>Carrera 3D</h3>
+          <a href="https://example.com/juego3" target="_blank">Jugar</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="C:\Users\equipo 9\Pictures\MI PRIMERA PAGINA WEB\images (2).jpg" alt="Juego 4">
+        <div class="card-content">
+          <h3>Animals Colors </h3>
+          <a href="https://www.friv.com/z/games/colormepets/game.html" target="_blank">Jugar</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="C:\Users\equipo 9\Pictures\MI PRIMERA PAGINA WEB\images (3).jpg" alt="Juego 5">
+        <div class="card-content">
+          <h3>Minecraft</h3>
+          <a href="https://www.friv.com/z/games/minecraftclassic/game.html"_blank">Jugar</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="C:\Users\equipo 9\Pictures\MI PRIMERA PAGINA WEB\hqdefault.jpg" alt="Juego 6">
+        <div class="card-content">
+          <h3>Color Strings</h3>
+          <a href="https://www.friv.com/z/games/colorstrings/game.html"_blank">Jugar</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="C:\Users\equipo 9\Pictures\MI PRIMERA PAGINA WEB\orig.png" alt="Juego 7">
+        <div class="card-content">
+          <h3>Mad Fish</h3>
+          <a href="https://www.friv.com/z/games/madfish/game.html" target="_blank">Jugar</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="C:\Users\equipo 9\Pictures\MI PRIMERA PAGINA WEB\Chess_game_Staunton_No._6.jpg" alt="Juego 8">
+        <div class="card-content">
+          <h3>Ajedres</h3>
+          <a href="https://www.friv.com/z/games/chess/game.html" target="_blank">Jugar</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="C:\Users\equipo 9\Pictures\MI PRIMERA PAGINA WEB\images (4).jpg" alt="Juego 9">
+        <div class="card-content">
+          <h3>Basseball</h3>
+          <a href="https://www.friv.com/z/games/baseball/game.html" target="_blank">Jugar</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="C:\Users\equipo 9\Pictures\MI PRIMERA PAGINA WEB\images (5).jpg" alt="Juego 10">
+        <div class="card-content">
+          <h3>Basket Champs</h3>
+          <a href="https://www.friv.com/z/games/basketchamps/game.html"_blank">Jugar</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="C:\Users\equipo 9\Pictures\MI PRIMERA PAGINA WEB\images (6).jpg" alt="Juego 11">
+        <div class="card-content">
+          <h3>Moto X3M</h3>
+          <a href="https://www.friv.com/z/games/motox3m/game.html"_blank">Jugar</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="C:\Users\equipo 9\Pictures\MI PRIMERA PAGINA WEB\images.png" alt="Juego 12">
+        <div class="card-content">
+          <h3>Wordsearch</h3>
+          <a href="https://www.friv.com/z/games/frivwordsearch/game.html" target="_blank">Jugar</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="C:\Users\equipo 9\Pictures\MI PRIMERA PAGINA WEB\maxresdefault (1).jpg" alt="Juego 13">
+        <div class="card-content">
+          <h3>8 Ball Pro</h3>
+          <a href="https://www.friv.com/z/games/8ballpro/game.html" target="_blank">Jugar</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="C:\Users\equipo 9\Pictures\MI PRIMERA PAGINA WEB\death-chase.jpg" alt="Juego 14">
+        <div class="card-content">
+          <h3>Death Chase</h3>
+          <a href="https://www.friv.com/z/games/deathchase/game.html"_blank">Jugar</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="C:\Users\equipo 9\Pictures\MI PRIMERA PAGINA WEB\images (8).jpg" alt="Juego 15">
+        <div class="card-content">
+          <h3>I Wanna Win</h3>
+          <a href="https://www.friv.com/z/games/iwannawin/game.html"_blank">Jugar</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="C:\Users\equipo 9\Pictures\MI PRIMERA PAGINA WEB\mqdefault.jpg" alt="Juego 15">
+        <div class="card-content">
+          <h3>Save Pac 2040</h3>
+          <a href="https://www.friv.com/z/games/savepac2040/game.html"_blank">Jugar</a>
+        </div>
+      </div>
+
+  <script>
+    const canvas = document.getElementById("game");
+    const ctx = canvas.getContext("2d");
+
+    const grid = 20;
+    let count = 0;
+    let snake = {
+      x: 160,
+      y: 160,
+      dx: grid,
+      dy: 0,
+      cells: [],
+      maxCells: 4
+    };
+    let apple = {
+      x: 320,
+      y: 320
+    };
+
+    function getRandomInt(min, max) {
+      return Math.floor(Math.random() * (max - min)) + min;
+    }
+
+    function loop() {
+      requestAnimationFrame(loop);
+      if (++count < 4) return;
+      count = 0;
+
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+      snake.x += snake.dx;
+      snake.y += snake.dy;
+
+      if (snake.x < 0) snake.x = canvas.width - grid;
+      else if (snake.x >= canvas.width) snake.x = 0;
+
+      if (snake.y < 0) snake.y = canvas.height - grid;
+      else if (snake.y >= canvas.height) snake.y = 0;
+
+      snake.cells.unshift({ x: snake.x, y: snake.y });
+
+      if (snake.cells.length > snake.maxCells) {
+        snake.cells.pop();
+      }
+
+      ctx.fillStyle = "red";
+      ctx.fillRect(apple.x, apple.y, grid - 1, grid - 1);
+
+      ctx.fillStyle = "#4CAF50";
+      snake.cells.forEach(function (cell, index) {
+        ctx.fillRect(cell.x, cell.y, grid - 1, grid - 1);
+
+        if (cell.x === apple.x && cell.y === apple.y) {
+          snake.maxCells++;
+          apple.x = getRandomInt(0, 20) * grid;
+          apple.y = getRandomInt(0, 20) * grid;
+        }
+
+        for (let i = index + 1; i < snake.cells.length; i++) {
+          if (cell.x === snake.cells[i].x && cell.y === snake.cells[i].y) {
+            snake.x = 160;
+            snake.y = 160;
+            snake.cells = [];
+            snake.maxCells = 4;
+            snake.dx = grid;
+            snake.dy = 0;
+            apple.x = getRandomInt(0, 20) * grid;
+            apple.y = getRandomInt(0, 20) * grid;
+          }
+        }
+      });
+    }
+
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "ArrowLeft" && snake.dx === 0) {
+        snake.dx = -grid;
+        snake.dy = 0;
+      } else if (e.key === "ArrowUp" && snake.dy === 0) {
+        snake.dy = -grid;
+        snake.dx = 0;
+      } else if (e.key === "ArrowRight" && snake.dx === 0) {
+        snake.dx = grid;
+        snake.dy = 0;
+      } else if (e.key === "ArrowDown" && snake.dy === 0) {
+        snake.dy = grid;
+        snake.dx = 0;
+      }
+    });
+
+    requestAnimationFrame(loop);
+  </script>
+
+</body>
+</html>
